@@ -1,0 +1,142 @@
+ /* styling the body element */
+ body {
+    font-family: Merriweather, sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+
+/* repositioning the the sidebar navigation */
+.container nav{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(248, 200, 220);
+    height: 95vh;
+    margin: 0 auto;
+    padding: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/* positioning/styling the image icon */
+img {
+    display: flex;
+    position: relative;
+    bottom: 40px;
+    right: 45px;
+    border-radius: 10px;
+}
+
+/* positioning the h2 element */
+h2 {
+    display: flex;
+    position: relative;
+    bottom: 120px;
+    left: 60px;
+    font-size: 1.7rem;
+}
+
+/* positioning/styling the compose button element */
+button {
+    position: relative;
+    bottom: 90px;
+    height: 40px;
+    width: 200px;
+    border: 5px ridge rgb(128, 128, 128);
+    border-radius: 7px;
+    background-color: rgb(216, 191, 216);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* positioning the ul */
+ul {
+    position: relative;
+    bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+}
+
+/* changing the text color of the anchor tags elements */
+ul li a{
+    color: black;
+}
+
+/* repositioning/styling the inbox element */
+.container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(150, 222, 209);
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    gap: 15px;
+}
+
+/* expanding the search bar */
+.search-bar form input{
+    height: 40px;
+    width: 300px;
+    border-radius: 3px;
+}
+
+/* positioning the first email element */
+.email .email-1 span{
+    float: right;
+}
+
+/* positioning the second email element */
+.email .email-2 span{
+    float: right;
+}
+
+/* positioning the third email element */
+.email .email-3 span{
+    float: right;
+}
+
+/* highlighting the last email */
+.selected-email {
+    background-color: azure;
+}
+
+/* positioning the email content element */
+.container2 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(255, 248, 220);
+}
+
+/* bolding and increasing the sender name element */
+.message-header {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* styling the textarea element */
+.text-button textarea {
+    border-radius: 5px;
+}
+
+/* expanding/styling the submit button element */
+.text-button input {
+    width: 90px;
+    height: 30px;
+    padding: 0 auto;
+    margin: 0 auto;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+/* making the page fit all screen types */
+@media only screen and (max-width 768px) {
+    body {
+        flex-direction: column;
+    }
+}

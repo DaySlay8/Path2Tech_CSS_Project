@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>CSS Project</title>
+  <!-- adding a font family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Work+Sans:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- creating a div with a class of the first container -->
+  <div class="container">
+    <!-- creating the navigation bar that has the image, header, button, and anchor list items -->
+    <nav>
+      <img src="https://png.pngtree.com/png-clipart/20210915/ourmid/pngtree-user-avatar-login-interface-abstract-blue-icon-png-image_3917504.jpg" height="60" width="70" alt="image icon">
+      <h2>Welcome, Martha!</h2>
+      <form action="button">
+        <button type="button">Compose</button>
+      </form>
+      <ul>
+        <li><a href="inbox">Inbox (3)</a></li>
+        <li><a href="tagged">Tagged</a></li>
+        <li><a href="important">Important</a></li>
+        <li><a href="sent-mail">Sent Mail</a></li>
+        <li><a href="draft">Draft</a></li>
+        <li><a href="trash">Trash</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- creating the second div container that has email inbox -->
+  <div class= "container1">
+    <div class="search-bar">
+      <form action="/search">
+      <input type="search" name="query" placeholder="Search For Emails">
+      </form>
+    </div>
+    <div class="email">
+      <p class="email-1">Nordstrom Rack<span>3:40 AM</span></p>
+      <p class="portion">Extra 20% off all sale items</p>
+      <p class="email-2">LinkedIn<span>Nov 14</span></p>
+      <p class="portion-2">You have a new message from Adam</p>
+      <div class="selected-email">
+        <p class="email-3">Cousera<span>Nov 13</span></p>
+        <p class="portion-3">Congratulations, Your Certificate is Ready!</p>
+      </div>
+    </div>
+  </div>
+  <!-- creating the third div container that has the content of an email -->
+  <div class="container2">
+    <p class="receiver">To: mmorris@gmail.com</p>
+    <p class="sender">From: no-reply@t.mail.cousera.org</p>
+    <p class="message-header">Cousera</p>
+    <p class="message">Hey Martha Morris! Great job! You've done some seriously awesome work completing the first course of the Google IT Automation with Python Professional Certificate. By now, we hope that you've gained a solid understanding of the fundamentals of writing a computer program. You're going to be building on that knowledge throughout the rest of this program, so keep at it.</p>
+    <p class="message-2">Up next, you'll dive deeper into your newfound knowledge in our next course: Python for System Administration.</p>
+    <form class="text-button">
+      <textarea name="response" placeholder="Enter message" rows="12" cols="115"></textarea>
+      <br>
+      <input type="button" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
