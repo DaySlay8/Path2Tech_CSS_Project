@@ -3,18 +3,23 @@
     font-family: Merriweather, sans-serif;
     display: flex;
     flex-direction: row;
+    width: 100vw;
+    min-height: 100vh;
+    /* overflow-x: hidden; */
+    margin: 0;
+    padding: 0;
 }
 
 /* repositioning the the sidebar navigation */
-.container nav{
+.container {
     display: flex;
     flex-direction: column;
     background-color: rgb(248, 200, 220);
-    height: 95vh;
-    margin: 0 auto;
+    min-height: 100%;
     padding: 50px;
     border: 1px solid black;
     border-radius: 5px;
+    /* width: 100%; */
 }
 
 /* positioning/styling the image icon */
@@ -28,11 +33,11 @@ img {
 
 /* positioning the h2 element */
 h2 {
-    display: flex;
     position: relative;
     bottom: 120px;
     left: 60px;
-    font-size: 1.7rem;
+    /* font-size: 1.2rem; */
+    font-size: 30px;
 }
 
 /* positioning/styling the compose button element */
@@ -45,7 +50,8 @@ button {
     border-radius: 7px;
     background-color: rgb(216, 191, 216);
     font-weight: bold;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
+    font-size: 30px;
 }
 
 /* positioning the ul */
@@ -69,11 +75,12 @@ ul li a{
     flex-direction: column;
     justify-content: flex-start;
     background-color: rgb(150, 222, 209);
-    margin: 0 auto;
     padding: 10px;
     border: 1px solid black;
     border-radius: 5px;
     gap: 15px;
+    min-height: 100%;
+    /* width: 100%; */
 }
 
 /* expanding the search bar */
@@ -111,17 +118,22 @@ ul li a{
     border: 1px solid black;
     border-radius: 5px;
     background-color: rgb(255, 248, 220);
+    min-height: 100%;
+    /* width: 100%; */
 }
 
 /* bolding and increasing the sender name element */
 .message-header {
     font-weight: bold;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
+    font-size: 30px;
 }
 
 /* styling the textarea element */
 .text-button textarea {
     border-radius: 5px;
+    width: 100%;
+    height: 200px;
 }
 
 /* expanding/styling the submit button element */
@@ -135,8 +147,9 @@ ul li a{
 }
 
 /* making the page fit all screen types */
-@media only screen and (max-width 768px) {
+@media only screen and (max-width: 768px) {
     body {
+        display: flex;
         flex-direction: column;
     }
 }
